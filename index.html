@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A student support platform where learners share challenges and seek help in specific subjects." />
+  <meta name="keywords" content="student help, academic challenges, subject support, ask for help" />
+  <meta name="author" content="Your Name" />
+  <title>Student Support Forum</title>
+</head>
+<body>
+  <header role="banner">
+    <h1>Student Support Forum</h1>
+    <nav role="navigation" aria-label="Main navigation">
+      <ul>
+        <li><a href="#share">Share a Challenge</a></li>
+        <li><a href="#faq">FAQs</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main role="main">
+    <section aria-labelledby="intro">
+      <h2 id="intro">Welcome to the Support Forum</h2>
+      <p>This platform helps students share their academic challenges and request help from peers and mentors.</p>
+    </section>
+
+    <section id="share" aria-labelledby="share-heading">
+      <h2 id="share-heading">Share Your Challenge</h2>
+      <form aria-describedby="form-description">
+        <p id="form-description">Fill out the form below to share your difficulty and receive support.</p>
+
+        <label for="name">Your Name (optional):</label>
+        <input type="text" id="name" name="name" />
+
+        <label for="subject">Subject:</label>
+        <select id="subject" name="subject" required>
+          <option value="">--Select Subject--</option>
+          <option value="mathematics">Mathematics</option>
+          <option value="science">Science</option>
+          <option value="language">Language</option>
+          <option value="computer">Computer Studies</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="challenge">Describe Your Challenge:</label>
+        <textarea id="challenge" name="challenge" rows="6" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section id="faq" aria-labelledby="faq-heading">
+      <h2 id="faq-heading">Frequently Asked Questions</h2>
+      <article>
+        <h3>Who can use this platform?</h3>
+        <p>Any student who needs academic help or wants to assist others is welcome.</p>
+      </article>
+      <article>
+        <h3>Is my submission public?</h3>
+        <p>Submissions may be moderated and published to help others with similar issues.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2025 Student Support Forum. All rights reserved.</p>
+  </footer>
+</body>
+</html>
